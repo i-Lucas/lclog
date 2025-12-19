@@ -1,10 +1,10 @@
-# poc-clog
+# lclog
 
 Biblioteca de logging minimalista em TypeScript com saídas formatadas, banners, JSON e contexto encadeável.
 
 ## Visão geral
 
-`poc-clog` fornece uma API simples e encadeável para enriquecer logs com contexto (arquivo, contexto, debug, trace), temas (cores/emoji), formatação de timestamps, renderizações em banner e saída JSON. Foi concebida para ser usada diretamente em projetos TypeScript/Node (pode ser consumida como fonte `src/index.ts`).
+`lclog` fornece uma API simples e encadeável para enriquecer logs com contexto (arquivo, contexto, debug, trace), temas (cores/emoji), formatação de timestamps, renderizações em banner e saída JSON. Foi concebida para ser usada diretamente em projetos TypeScript/Node (pode ser consumida como fonte `src/index.ts`).
 
 ## Instalação
 
