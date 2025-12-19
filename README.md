@@ -27,9 +27,15 @@ npx tsx src/index.ts
 Importe o cliente `clog` e use os métodos encadeáveis:
 
 ```ts
-import { clog } from 'poc-clog';
+import { Clog } from "lclog";
 
-clog.info('Hello World');
+const clog = new Clog()
+
+clog.info("Hello, World!");
+clog.warning("This is a warning message.");
+clog.error("This is an error message.");
+clog.debug("Debugging information here.");
+clog.success("Operation completed successfully.");
 
 clog
   .file('user.service.ts')
