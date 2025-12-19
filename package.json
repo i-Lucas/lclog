@@ -1,0 +1,38 @@
+{
+  "name": "lclog",
+  "version": "0.1.0",
+  "description": "Logging utility with banners, JSON output and context-aware formatting (TypeScript)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "start": "tsx src/index.ts",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "logging",
+    "logger",
+    "typescript",
+    "cli",
+    "banner"
+  ],
+  "author": "Lucas Oliveira and AI",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
