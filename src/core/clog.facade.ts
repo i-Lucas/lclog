@@ -3,7 +3,7 @@ import { Logger } from './logger/logger.interface';
 import { LoggerFactory } from './logger/logger-factory';
 import { BannerOptions } from './strategies/banner-options.interface';
 
-export class Clog {
+export class Lclog {
 
     constructor(
 
@@ -12,24 +12,24 @@ export class Clog {
 
     ) { }
 
-    file(file: string): Clog {
+    file(file: string): Lclog {
 
-        return new Clog(this.ctx.with('file', file), this.factory);
+        return new Lclog(this.ctx.with('file', file), this.factory);
     }
 
-    context(context: string): Clog {
+    context(context: string): Lclog {
 
-        return new Clog(this.ctx.with('context', context), this.factory);
+        return new Lclog(this.ctx.with('context', context), this.factory);
     }
 
-    debug(debug: string): Clog {
+    debug(debug: string): Lclog {
 
-        return new Clog(this.ctx.with('debug', debug), this.factory);
+        return new Lclog(this.ctx.with('debug', debug), this.factory);
     }
 
-    trace(trace: string): Clog {
+    trace(trace: string): Lclog {
 
-        return new Clog(this.ctx.with('trace', trace), this.factory);
+        return new Lclog(this.ctx.with('trace', trace), this.factory);
     }
 
     info(message: string): this {
