@@ -11,7 +11,7 @@ Biblioteca de logging minimalista em TypeScript com saídas formatadas, banners,
 Instale via NPM (após publicação):
 
 ```bash
-npm install poc-clog
+npm i lclog
 ```
 
 Para desenvolvimento local, você pode executar o exemplo com `tsx`:
